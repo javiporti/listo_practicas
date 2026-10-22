@@ -1,1 +1,1 @@
-# Mi chuleta de git
+borrado compi
