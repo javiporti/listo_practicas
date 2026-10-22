@@ -8,7 +8,7 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest        #deberiamos de poner ubuntu 24.04, pero esta bien, funciona
     steps:
       - name: Descargar el código
         uses: actions/checkout@v5
@@ -22,11 +22,11 @@ jobs:
       - name: Instalar dependencias
         run: pip install -r requirements.txt
 
-      - name: Linter
+      - name: Linter    #mejorar los espacios de linea
         run: ruff check .
 
       - name: Formato
         run: ruff format --check .
 
       - name: Tests
-        run: pytest
+        run: pytest  #libreria de test muy util
